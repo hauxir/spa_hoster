@@ -1,8 +1,9 @@
 FROM node:latest
 
+WORKDIR /app
+
+COPY server.js /app/server.js
+
 RUN npm install express
 
-WORKDIR /app
-ADD server.js /app/server.js
-
-CMD node server.js
+CMD ["node", "server.js"]
