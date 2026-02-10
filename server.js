@@ -15,4 +15,4 @@ app.use(function(req, res) {
   res.sendFile("/www/index.html");
 });
 
-app.listen(8000);
+app.listen(80);
