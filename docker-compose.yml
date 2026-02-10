@@ -1,6 +1,6 @@
 spa_hoster:
   ports:
-      - "8001:8000"
+      - "8001:80"
   build: .
   volumes:
     - ./dist:/www
